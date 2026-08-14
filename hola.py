@@ -1,7 +1,11 @@
-def saludar(nombre, ciudad):
-    mensaje = f"Hola mi buen {nombre} {ciudad}"
-    return mensaje
+def saludar(nombre):
+    return f"Estoy aprendiendo {nombre}"
 
-resultado = saludar("Python", "de mi compu")
+personas = ["Python", "Git", "Github","IA"]
 
-print(resultado)
+for persona in personas:
+	if persona=="IA":
+		print("IA es nuestro objetivo final")    
+	else:	
+		print(saludar(persona))
+	
