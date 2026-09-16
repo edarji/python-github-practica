@@ -1,3 +1,6 @@
+print("Hola desde GitHub")
+print("Este cambio fue creado en mi MacBook")
+
 def saludar(nombre):
     return f"Estoy aprendiendo {nombre}"
 
