@@ -8,7 +8,6 @@ app = Flask(__name__)
 
 hostname = platform.node()
 python_version = sys.version.split()[0]
-hora = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
 branch = subprocess.run(
     ["git", "branch", "--show-current"],
@@ -30,6 +29,7 @@ else:
 
 @app.route("/")
 def home():
+    hora = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     return f"""
     <h1>⚙️ Edarji Home Lab</h1>
 
